@@ -84,5 +84,5 @@ if [ -d ${BUILD_DIR}/local ]; then
 fi
 
 # Hack for perlbrew, dunno what to do with this:
-sed -i 's/\/build\/app/\/app/g' ${BUILD_DIR}/.profile.d/perlbrew.sh
+echo "ln -s /app /build/app" >> ${BUILD_DIR}/.profile.d/perlbrew-link.sh
 

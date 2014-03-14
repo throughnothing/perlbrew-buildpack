@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 cat << EOF
 addons: []
+config_vars:
+    PATH: $PATH:/app/local/bin
 default_process_types: {}
 EOF
