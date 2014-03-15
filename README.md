@@ -36,7 +36,7 @@ Welcome to the Mojolicious real-time web framework!
 
 ## Step 2
 
-Create a 
+Create a
 [cpanfile](http://search.cpan.org/~miyagawa/Module-CPANfile-1.0002/lib/cpanfile.pod)
 that lists dependencies instead:
 
@@ -93,3 +93,9 @@ Cloning into '/build/buildpacks/custom'...
 To dokku@yourhost.tld:perltest
    36b6b36..d990a8f  master -> master
 ```
+
+## System Packages
+
+A `.packages` file can be created in the root of your repo to specify
+system packages to be installed for your module (currently just uses `apt-get`
+and thus relies on the system being debian/ubuntu-based).
